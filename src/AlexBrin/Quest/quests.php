@@ -92,6 +92,10 @@
                         $type = 'jump';
                     break;
 
+                case 'hold':
+                    $type = 'hold';
+                    break;
+
 				default: 
 						$type = '???';
 

@@ -3,7 +3,9 @@
 	namespace AlexBrin\Quest\Listener;
 
     use AlexBrin\Quest\quests;
+    use onebone\economyapi\EconomyAPI;
     use pocketmine\command\ConsoleCommandSender;
+    use pocketmine\event\player\PlayerItemHeldEvent;
     use pocketmine\event\player\PlayerJumpEvent;
     use pocketmine\item\Item;
 	use pocketmine\item\enchantment\Enchantment;
@@ -92,6 +94,7 @@
             if($this->plugin->users[$name]['during'] !== false)
                 $this->checkQuest($player, $this->plugin->users[$name]['during'], 'jump');
         }
+
 
 		public function checkQuest($player, $quest, $event, $bid = false) {
 			$name = strtolower($player->getName());

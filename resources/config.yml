@@ -3,8 +3,8 @@ getQuest: '§eTask name: §c§l> §e {quest}'
 getQuestInfo: '§aQuest: §f {type} §a {count} §2 {target}'
 questEnded: '§aYou have completed all server tasks! Congratulations!'
 questNotExist: '§a The task does not exist. Use the command §e/quest §ato see the task list. '
-questHelp: '§a mission name: §c§l> §r§e {quest} \n The task you need to do: §f {type} {count} §2 {target} '
-questEnd: '§a Complete! §a\n Your reward: §b {count} {award} §a! '
+questHelp: '§a mission name: §c§l> §r§e {quest} The task you need to do: §f {type} {count} §2 {target} '
+questEnd: '§a Complete!  Your reward: §b {count} {award} §a! '
 
 # allquests can have
 # blockBreak
@@ -52,4 +52,11 @@ quests:
       id: money
       count: 1000
       name: coins
-... 
+  - name: Mission Five
+    task: jump
+    target: 10
+    award:
+      id: money
+      count: 1000
+      name: coins
+...

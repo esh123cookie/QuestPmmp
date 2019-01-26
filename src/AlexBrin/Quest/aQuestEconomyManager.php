@@ -18,7 +18,7 @@
 			if($this->eco === null)
 				$plugin->getLogger()->warning('No Economy Plugins Found!');
 			else
-				$plugin->getLogger()->info('§aFound: §d'.$this->eco->getName());
+				$plugin->getLogger()->info('Found'.$this->eco->getName());
 		}
 
 		public function giveMoney($player, $amount) {
