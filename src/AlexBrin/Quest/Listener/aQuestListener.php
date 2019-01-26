@@ -4,7 +4,8 @@
 
     use AlexBrin\Quest\quests;
     use pocketmine\command\ConsoleCommandSender;
-	use pocketmine\item\Item;
+    use pocketmine\event\player\PlayerJumpEvent;
+    use pocketmine\item\Item;
 	use pocketmine\item\enchantment\Enchantment;
 	use pocketmine\item\Armor;
 	use pocketmine\inventory\PlayerInventory;
@@ -38,7 +39,7 @@
 					'complete' => 0
 				];
 				$this->plugin->save();
-				$this->plugin->getLogger()->info("§e$name had been added to the Database!");
+				$this->plugin->getLogger()->info("§e$name has been added to the Database!");
 			}
 		}
 
@@ -84,6 +85,13 @@
 			if($this->plugin->users[$name]['during'] !== false)
 				$this->checkQuest($player, $this->plugin->users[$name]['during'], 'itemconsume');
 		}
+
+        public function onPlayerJump(PlayerJumpEvent $event) {
+            $player = $event->getPlayer();
+            $name = strtolower($player->getName());
+            if($this->plugin->users[$name]['during'] !== false)
+                $this->checkQuest($player, $this->plugin->users[$name]['during'], 'jump');
+        }
 
 		public function checkQuest($player, $quest, $event, $bid = false) {
 			$name = strtolower($player->getName());

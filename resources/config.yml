@@ -14,6 +14,7 @@ questEnd: '§a Complete! §a\n Your reward: §b {count} {award} §a! '
 # playerDeath
 # itemConsume
 # itemDrop
+# jump
 quests:
   - name: First Mission
     task: blockBreak

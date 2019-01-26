@@ -84,6 +84,10 @@
 						$type = 'Drop';
 					break;
 
+                case 'jump':
+                        $type = 'jump';
+                    break;
+
 				default: 
 						$type = '???';
 
