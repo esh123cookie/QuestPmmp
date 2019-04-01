@@ -42,7 +42,7 @@
 						return false;
 					}
 					if($num >= count($this->config['quests'])) {
-						$sender->sendMessage($config['questEnded']);
+						$sender->sendMessage($this->config['questEnded']);
 						return false;
 					}
 					$this->users[$name]['during'] = [
