@@ -6,7 +6,7 @@ questNotExist: '§a The task does not exist. Use the command §e/quest §ato see
 questHelp: '§a mission name: §c§l> §r§e {quest} The task you need to do: §f {type} {count} §2 {target} '
 questEnd: '§a Complete!  Your reward: §b {count} {award} §a! '
 
-# allquests can have
+# all quests can have
 # blockBreak
 # blockPlace
 # If you need blockBreak or blockPlace - Write it all
