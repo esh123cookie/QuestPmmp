@@ -8,5 +8,5 @@ translator: SaltyPixelDevz
 
 commands:
   quest:
-    description: "Quests!"
+    description: "§eQuests"
     default: true
