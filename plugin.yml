@@ -1,12 +1,12 @@
 name: QuestPMMP
 main: AlexBrin\Quest\quests
 version: 1.1
-api: 3.0.0
+api: 7.0.0
 author: Gamchik
 fixer: GamerSoiCon / SaltyPixelDevz
 translator: SaltyPixelDevz
 
 commands:
   quest:
-    description: "Quests!"
+    description: "§eQuests"
     default: true
